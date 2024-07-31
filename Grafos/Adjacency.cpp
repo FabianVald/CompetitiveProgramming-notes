@@ -1,17 +1,16 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
 
-void agregarArista(vector<vector<int>>& adyacencias, int u, int v) {
-    adyacencias[u].push_back(v);
-    adyacencias[v].push_back(u);
+void addEdge(vector<vector<int>>& adjacency, int u, int v) {
+    adjacency[u].push_back(v);
+    adjacency[v].push_back(u);
 }
 
-void imprimirArbol(vector<vector<int>>& adyacencias, int n) {
+void showAdjacency(vector<vector<int>>& adjacency, int n) {
     for (int i = 0; i < n; ++i) {
         cout << i << ": ";
-        for (int vecino : adyacencias[i]) {
+        for (int vecino : adjacency[i]) {
             cout << vecino << " ";
         }
         cout << endl;
@@ -20,14 +19,14 @@ void imprimirArbol(vector<vector<int>>& adyacencias, int n) {
 
 int main(){
 
-    vector<vector<int>> adyacencia(7);
-    agregarArista(adyacencia, 0, 1);
-    agregarArista(adyacencia, 0, 2);
-    agregarArista(adyacencia, 1, 3);
-    agregarArista(adyacencia, 1, 4);
-    agregarArista(adyacencia, 2, 5);
-    agregarArista(adyacencia, 2, 6);
+    vector<vector<int>> adjacency(7);
+    addEdge(adjacency, 0, 1);
+    addEdge(adjacency, 0, 2);
+    addEdge(adjacency, 1, 3);
+    addEdge(adjacency, 1, 4);
+    addEdge(adjacency, 2, 5);
+    addEdge(adjacency, 2, 6);
 
-    imprimirArbol(adyacencia, 7);
+    showAdjacency(adjacency, 7);
 
 }
