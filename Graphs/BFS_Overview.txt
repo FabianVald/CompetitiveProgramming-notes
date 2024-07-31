@@ -1,0 +1,7 @@
+// Breadth First Search (BFS)
+// O(V+E) time complexity
+
+// Useful for finding the shortest path on unwighted graphs.
+
+/* a BFS starts at some arbitrary node of a graph and explore th eneightbour node first,
+before moving to the next level neighbours.*/
