@@ -1,0 +1,69 @@
+#Arboles
+
+Ancentro es una generación mas arriba del nodo.
+
+O(K*N) Consultar para saber los K ancestros de un nodo de N veces.
+
+K -> Numero binario. 
+
+K = 19 = 10011 = 16 + 2 + 1 // 19 generaciones más arriba.
+
+Precalcular los saltos en potencias de 2 por cada nodo, podemos resolver cada consulta en timepo O(log_2(k)).
+
+Log_2 K,  complejiidad abordable.
+
+# Hacer un DP es una estrategia muy Lenta.
+
+##Binary Lifting
+
+Iterando sobre todos los bits.
+
+
+(U = 0 ) <- Se define aquí la raiz.
+
+Precomputar los saltos.
+
+Buscar la cantidad de saltos.
+
+
+#LCA
+
+Problema: Dado un arbol queremos encontrar el ancestro comun (a menor altura) mas largo de 2 nodos.
+
+Un LCA de dos nodos es un nodo tal que es el primer ancestro de ambos de estos nodos.
+
+1. Igualar ambos nosotros en altura (Usando binary Lifting)
+
+Queremos quedar uno por debado del LCA.
+
+Si es el mismo nodo estamos o en el LCA o por encima.
+Debemos bajar hasta uno por debeajo.
+
+
+
+#Disjoint SET UNION (DSU)
+
+CUadno en un problema tenemos distintos conjuntos y tenemos la operacion de juntar conjuntos eidentificar a que conjunto pertenecen, es cuando queremos usar DSU.
+
+
+Minimun Spanning Three: Ejemplo, dado un grafo con aristas con peso, queremos elegir un subconjunto de aristas tal que exista un camino entre cada par de nodos y la suma de las aristaas escogidas sea minima.
+
+
+
+### Matemámicas.
+
+Criba de Erathostenes.
+Forma más rápida de encontrar numeros primos.
+O(n log log n).
+
+Mantenemos un vector que nos indica si cierto numero a sido marcado, iteramos desde el numero 2, si no a sido marcada, entonces, en un numero primo, iteramos sobre todos sus multiplos y los marcamos.
+
+#Factorización Prima.
+
+O(aqrt(N))
+
+#Probabilidades
+
+Usar Long Double
+
+calcular (N - B) como la multiplicacíón inversa y sui modulo en x^(M-2).
