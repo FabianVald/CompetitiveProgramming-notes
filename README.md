@@ -1,7 +1,7 @@
 # CompetitiveProgramming-notes
 CIPC 2024 Resume 
 
-ResumE, notes and codes based on the content of CIPC 2024 Concepción, Chile.
+Resume, notes and codes based on the content of CIPC 2024 Concepción, Chile.
 
 __Algorithms__ : Tree and Search algorithms on c++ language.
 
