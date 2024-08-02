@@ -17,7 +17,7 @@ void showAdjacency(vector<vector<int>>& adjacency, int n) {
 
 
 // 			===================================
-//   			 DFS ALGORITHM WITHOUT WEIGHT
+//   		   DFS ALGORITHM WITHOUT WEIGHT
 // 			===================================
 
 vector<vector<int>> AdjList;
@@ -51,6 +51,14 @@ int main()
 	showAdjacency(AdjList,5);
 
 	dfs(0); // dfs from 0 to all
+
+	map<int, int> map;
+
+	for (int i = 0; i < n; ++i)
+	{
+		cout << dfs_num[i] << " ";
+		map.push_back()
+	}
 
 	return 0;
 }
