@@ -12,3 +12,5 @@ __Challenges__: Any challenges Codes of CIPC 2024 on python and c++ languages.
 __Graphs__: Graph utilites codes, like adjacency lists, Breadth First Search (BFS) and  Depth First Search (DFS) on c++ language.
 
 *_Authors: Ariel Zuniga - Fabian Valderrama - Julio Sepulveda. Universidad de O'higgins._*
+
+V.1.0.0
